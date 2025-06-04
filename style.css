@@ -1,3 +1,38 @@
-h1 {
-    color: red;
+body {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+p {
+    font-size: 2rem;
+}
+
+#containerLeft {
+    width: 40vw;
+}
+
+#containerRight {
+    flex-direction: column;
+    width: 100vw;
+}
+
+#top {
+    background-color: lightblue;
+    
+}
+
+#form {
+    background-color: whitesmoke;
+}
+
+#button {
+    background-color: gray;
+}
+
+#top,
+#form,
+#button {
+    height: 33vh;
+    padding-left: 25px;
+    padding-top: 10px;
 }
