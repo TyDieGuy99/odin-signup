@@ -7,24 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-<h1>this is temp</h1>
-    <div>
-        <img src="photo.jpg" alt="photo:D">
+    <div id="containerLeft">
+        <img src="photo.jpg" alt="photo:D" style="width:100%;height:100%">
     </div>
-    <div>
-        <div>
-            <p>this is just filler text for now make nice later</p>
+    <div id="containerRight">
+        <div id="top">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                you deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
         </div>
-        <div>
+        <div id="form">
             <form action="">
-                <p>
-                    <label for="nameFirst">First Name:</label>
-                    <input type="text" name="name_first" id="namefirst">
-                </p>
+                <legend>Let's do this!
+                    <fieldset>
+                        <label for="nameFirst">First Name: </label>
+                        <input type="text" name="name_first" id="namefirst">
+    
+                        <label for="nameLast">Last Name: </label>
+                        <input type="text" name="name_last" id="namelast">
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Emial: </label>
+                        <input type="email" name="email" id="email">
+    
+                        <label for="number">Phone Number: </label>
+                        <input type="number" name="number" id="number">
+                    </fieldset>
+                    <fieldset>
+                        <label for="password">Password:</label>
+                        <input type="text" name="password" id="password">
+    
+                        <label for="passwordConfirm">Confirm Password:</label>
+                        <input type="text" name="passwordConfirm" id="passwordConfirm">
+                    </fieldset>
+                </legend>
+                
             </form>
         </div>
-        <div>
+        <div id="button">
             <button type="submit">Create Account</button>
+            <p>Already have an account? Log in</p>
         </div>
     </div>
 </body>
