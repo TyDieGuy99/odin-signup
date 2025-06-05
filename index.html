@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="containerLeft">
-        <img src="photo.jpg" alt="photo:D" style="width:100%;height:100%">
+        <img src="photo.jpg" alt="photo:D">
     </div>
     <div id="containerRight">
         <div id="top">
@@ -20,27 +20,35 @@
         <div id="form">
             <form action="">
                 <legend>Let's do this!
-                    <fieldset>
-                        <label for="nameFirst">First Name: </label>
-                        <input type="text" name="name_first" id="namefirst">
-    
-                        <label for="nameLast">Last Name: </label>
-                        <input type="text" name="name_last" id="namelast">
-                    </fieldset>
-                    <fieldset>
-                        <label for="email">Emial: </label>
-                        <input type="email" name="email" id="email">
-    
-                        <label for="number">Phone Number: </label>
-                        <input type="number" name="number" id="number">
-                    </fieldset>
-                    <fieldset>
-                        <label for="password">Password:</label>
-                        <input type="text" name="password" id="password">
-    
-                        <label for="passwordConfirm">Confirm Password:</label>
-                        <input type="text" name="passwordConfirm" id="passwordConfirm">
-                    </fieldset>
+                    <div id="container">
+                        <p>
+                            <label for="nameFirst">
+                                <span>First Name: </span>
+                            </label>
+                            <input type="text" name="name_first" id="namefirst">
+                        </p>
+                        <p>
+                            <label for="nameLast">Last Name: </label>
+                            <input type="text" name="name_last" id="namelast">
+                        </p>
+                        <p>
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email">
+                        </p>
+                        <p>
+                            <label for="number">Phone Number: </label>
+                            <input type="number" name="number" id="number">
+                        </p>
+                        <p>
+                           <label for="password">Password:</label>
+                            <input type="password" name="password" id="password">
+                        </p>
+                        <p>
+                            <label for="passwordConfirm">Confirm Password:</label>
+                            <input type="password" name="passwordConfirm" id="passwordConfirm">
+                        </p>
+                    </div>
+                    
                 </legend>
                 
             </form>
