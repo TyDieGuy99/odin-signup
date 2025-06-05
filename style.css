@@ -1,14 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: row;
     margin: auto;
+    background-color: gray;
+    
 }
-p {
+
+img {
+    width: 30vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+p,
+legend {
     font-size: 2rem;
 }
 
-#containerLeft {
-    width: 40vw;
+input {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-size: 1.5rem;
+}
+
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px 100px;
 }
 
 #containerRight {
@@ -18,7 +51,6 @@ p {
 
 #top {
     background-color: lightblue;
-    
 }
 
 #form {
@@ -32,7 +64,12 @@ p {
 #top,
 #form,
 #button {
-    height: 33vh;
+    min-height: 30vh;
     padding-left: 25px;
     padding-top: 10px;
+
+}
+
+input:invalid {
+    border: 2px solid red;
 }
