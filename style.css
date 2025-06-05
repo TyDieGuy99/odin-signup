@@ -9,7 +9,6 @@ body {
     flex-direction: row;
     margin: auto;
     background-color: gray;
-    
 }
 
 img {
@@ -30,6 +29,7 @@ input {
     margin: 0;
     display: block;
     font-size: 1.5rem;
+    border: 2px solid #E5E7EB;
 }
 
 
@@ -72,4 +72,10 @@ form {
 
 input:invalid {
     border: 2px solid red;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.25);
 }
