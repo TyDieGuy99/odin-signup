@@ -7,61 +7,61 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="containerLeft">
-        <img src="photo.jpg" alt="photo:D">
-    </div>
-    <div id="containerRight">
-        <div id="top">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize
-                you deepest dreams. Sign up <em>now</em> to get started.
-            </p>
-            <p>You <em>know</em> you want to.</p>
-        </div>
-        <form action="">
-            <div id="form">
-            
-                <legend>Let's do this!
-                    <div id="container">
-                        <p>
-                            <label for="nameFirst">First Name: </label>
-                            <input type="text" name="name_first" id="namefirst" placeholder="Robert" minlength="1" pattern="[a-zA-Z]*" required>
-                        </p>
-                        <p>
-                            <label for="nameLast">Last Name: </label>
-                            <input type="text" name="name_last" id="namelast" placeholder="Cubeshorts" minlength="1" pattern="[a-zA-Z]*" required>
-                        </p>
-                        <p>
-                            <label for="email">Email: </label>
-                            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-                        </p>
-                        <p>
-                            <label for="number">Phone Number: </label>
-                            <input type="tel" name="phone" id="phone" placeholder="123-555-5555" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" minlength="12" maxlength="12" required>
-                        </p>
-                        <p>
-                           <label for="password">Password:</label>
-                            <input type="password" name="password" id="password" 
-                            placeholder="8-16 characters, one uppercase letter, lowercase letter, number, and symbol" 
-                            title="Must be 8-16 characters long, contain at least one uppercase letter, lowercase letter, number, and symbol" 
-                            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}$" required>
-                        </p>
-                        <p>
-                            <label for="passwordConfirm">Confirm Password:</label>
-                            <input type="password" name="passwordConfirm" id="passwordConfirm" 
-                            placeholder="8-16 characters, one uppercase letter, lowercase letter, number, and symbol" 
-                            title="Must be 8-16 characters long, contain at least one uppercase letter, lowercase letter, number, and symbol" 
-                            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}$" required>
-                        </p>
-                    </div>
-                    
-                </legend>
+    <div id="page">
+        <div id="containerLeft">
 
+        </div>
+        <div id="containerRight">
+            <div id="top">
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize
+                    you deepest dreams. Sign up <em>now</em> to get started.
+                </h2>
+                <h2>You <em>know</em> you want to.</h2>
             </div>
-            <div id="button">
-                <button type="submit" id="submitBtn">Create Account</button>
-                <p>Already have an account? Log in</p>
-            </div>
-        </form>
+            <form action="">
+                <div id="form">
+                    <h2 class="formTitle">Let's do this!</h2>
+                            <div class="input">
+                                <label for="nameFirst">First Name: </label>
+                                <input type="text" name="name_first" id="namefirst" placeholder="Robert" minlength="1" pattern="[a-zA-Z]*" required>
+                            </div>
+                            <div class="input">
+                                <label for="nameLast">Last Name: </label>
+                                <input type="text" name="name_last" id="namelast" placeholder="Cubeshorts" minlength="1" pattern="[a-zA-Z]*" required>
+                            </div>
+                            <div class="input">
+                                <label for="email">Email: </label>
+                                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                            </div>
+                            <div class="input">
+                                <label for="number">Phone Number: </label>
+                                <input type="tel" name="phone" id="phone" placeholder="123-555-5555" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" minlength="12" maxlength="12" required>
+                            </div>
+                            <div class="input">
+                               <label for="password">Password:</label>
+                                <input type="password" name="password" id="password" 
+                                placeholder="8-16 characters, one uppercase letter, lowercase letter, number, symbol" 
+                                title="Must be 8-16 characters long, contain at least one uppercase letter, lowercase letter, number, and symbol" 
+                                pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}$" required>
+                            </div>
+                            <div class="input">
+                                <label for="passwordConfirm">Confirm Password:</label>
+                                <input type="password" name="passwordConfirm" id="passwordConfirm" 
+                                placeholder="8-16 characters, one uppercase letter, lowercase letter, number, symbol" 
+                                title="Must be 8-16 characters long, contain at least one uppercase letter, lowercase letter, number, and symbol" 
+                                pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}$" required>
+                            </div>    
+    
+                </div>
+                <div id="button">
+                    <button type="submit" id="submitBtn">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+            <footer>
+                <p>link to github will go here using logo or something idk</p>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
