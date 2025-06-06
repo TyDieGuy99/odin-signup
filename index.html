@@ -17,46 +17,51 @@
             </p>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <div id="form">
-            <form action="">
+        <form action="">
+            <div id="form">
+            
                 <legend>Let's do this!
                     <div id="container">
                         <p>
-                            <label for="nameFirst">
-                                <span>First Name: </span>
-                            </label>
-                            <input type="text" name="name_first" id="namefirst">
+                            <label for="nameFirst">First Name: </label>
+                            <input type="text" name="name_first" id="namefirst" placeholder="Robert" minlength="1" pattern="[a-zA-Z]*" required>
                         </p>
                         <p>
                             <label for="nameLast">Last Name: </label>
-                            <input type="text" name="name_last" id="namelast">
+                            <input type="text" name="name_last" id="namelast" placeholder="Cubeshorts" minlength="1" pattern="[a-zA-Z]*" required>
                         </p>
                         <p>
                             <label for="email">Email: </label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
                         </p>
                         <p>
                             <label for="number">Phone Number: </label>
-                            <input type="number" name="number" id="number">
+                            <input type="tel" name="phone" id="phone" placeholder="123-555-5555" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" minlength="12" maxlength="12" required>
                         </p>
                         <p>
                            <label for="password">Password:</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" 
+                            placeholder="8-16 characters, one uppercase letter, lowercase letter, number, and symbol" 
+                            title="Must be 8-16 characters long, contain at least one uppercase letter, lowercase letter, number, and symbol" 
+                            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}$" required>
                         </p>
                         <p>
                             <label for="passwordConfirm">Confirm Password:</label>
-                            <input type="password" name="passwordConfirm" id="passwordConfirm">
+                            <input type="password" name="passwordConfirm" id="passwordConfirm" 
+                            placeholder="8-16 characters, one uppercase letter, lowercase letter, number, and symbol" 
+                            title="Must be 8-16 characters long, contain at least one uppercase letter, lowercase letter, number, and symbol" 
+                            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}$" required>
                         </p>
                     </div>
                     
                 </legend>
-                
-            </form>
-        </div>
-        <div id="button">
-            <button type="submit">Create Account</button>
-            <p>Already have an account? Log in</p>
-        </div>
+
+            </div>
+            <div id="button">
+                <button type="submit" id="submitBtn">Create Account</button>
+                <p>Already have an account? Log in</p>
+            </div>
+        </form>
     </div>
 </body>
 </html>
