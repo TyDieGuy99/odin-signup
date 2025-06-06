@@ -21,7 +21,9 @@ img {
 p,
 legend {
     font-size: 2rem;
+    
 }
+
 
 input {
     width: 500px;
@@ -41,7 +43,8 @@ form {
 #container {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 0px 100px;
+    gap: 25px 25px;
+    margin-top: 25px;
 }
 
 #containerRight {
@@ -51,6 +54,7 @@ form {
 
 #top {
     background-color: lightblue;
+    
 }
 
 #form {
@@ -67,15 +71,19 @@ form {
     min-height: 30vh;
     padding-left: 25px;
     padding-top: 10px;
-
+    width: 70vw;
 }
 
-input:invalid {
+input:invalid:not(:placeholder-shown) {
     border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
 }
 
 input:focus {
     outline: none;
     border: 2px solid blue;
-    box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 8px 5px 15px 0px rgba(0, 0, 0, 0.25);
 }
