@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'helsinkiregular';
-    src: url('fonts/helsinki-webfont.woff2') format('woff2'),
-         url('fonts/helsinki-webfont.woff') format('woff');
+    font-family: 'farsan_regularregular';
+    src: url('fonts/farsan-regular-webfont.woff2') format('woff2'),
+         url('fonts/farsan-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -32,24 +32,24 @@
     --color-text-input: #1f2f26;
     --color-link: #3d7b8a;
     --color-link-hover: #4a8a9b;
-    --color-link-visited-hover: #3a4d42;
+    --color-link-visited-hover: #496153;
     --color-link-visited: #2a3d35;
-    --color-text-hover: #f5f2eb;
+    --color-text-hover: #ddd7c7;
     --color-background: #c4a373;
     --color-form: #9a8068;
     --color-input-hover: #f0f3f2;
     --header-font:
     'gloria_hallelujahregular', sans-serif;
     --label-font:
-    'helsinkiregular', sans-serif;
+    'farsan_regularregular', sans-serif;
     --font-size-form:
-    clamp(0.875rem, 1vw, 1.5rem);
+    clamp(1.25rem, min(3vw, 3vh), 1.75rem);
     --font-size-headings:
-    clamp(1.5rem, 2vw, 2.5rem);
+    clamp(2rem, min(2vw, 2vh), 2.5rem);
     --font-size-body:
-    clamp(1.5rem, 3vw, 2rem);
+    clamp(1.5rem, min(2vw, 2.5vh), 2rem);
     --font-size-button-area:
-    clamp(1.5rem, 2vw, 1.75rem);
+    clamp(1.5rem, min(2vw, 2vw), 2rem);
 }
 
 h2,
@@ -116,7 +116,7 @@ p {
 }
 
 button {
-    margin: clamp(1rem, 4vh, 2rem) 0;
+    margin: clamp(1rem, min(4vh, 4vh), 2rem) 0;
     padding: 0.5rem 3rem;
     font-size: var(--font-size-button-area);
     font-family: var(--header-font);
@@ -137,7 +137,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--color-footer);
-    min-height: clamp(1rem, 2vh, 2rem);
+    min-height: clamp(1rem, min(2vh, 2vh), 2rem);
     margin-top: auto;
     width: 100%;
 }
@@ -188,7 +188,7 @@ footer img {
     text-align: left;
     font-size: large;
     font-weight: 600;
-    width: clamp(40%, 90vw - 20vw, 85%);
+    width: clamp(40%, min(90vw - 20vw, 90vh + 20vh), 85%);
 }
 
 #form {
@@ -294,6 +294,11 @@ a:visited {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+    }
+
+    h2,
+    p {
+        font-size: clamp(1.25rem, 3vw, 1.4rem);
     }
 
     #containerLeft {

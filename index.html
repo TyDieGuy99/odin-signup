@@ -23,32 +23,34 @@
             </div>
             <form action="">
                 <div id="form">
-                    <h3 class="formTitle">Bunger Bunger ! ! !</h3>
+                    <h3 class="formTitle">All fields are required.</h3>
                             <div class="input">
-                                <label for="nameFirst">First Name: </label>
+                                <label for="nameFirst">First Name: <span aria-label="required">*</span></label>
                                 <input type="text" name="name_first" id="namefirst" placeholder="Robert" minlength="1" pattern="[a-zA-Z]*" required>
                             </div>
                             <div class="input">
-                                <label for="nameLast">Last Name: </label>
+                                <label for="nameLast">Last Name: <span aria-label="required">*</span></label>
                                 <input type="text" name="name_last" id="namelast" placeholder="Cubeshorts" minlength="1" pattern="[a-zA-Z]*" required>
                             </div>
                             <div class="input">
-                                <label for="email">Email: </label>
+                                <label for="email">Email: <span aria-label="required">*</span></label>
                                 <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
                             </div>
                             <div class="input">
-                                <label for="number">Phone Number: </label>
-                                <input type="tel" name="phone" id="phone" placeholder="123-555-5555" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" minlength="12" maxlength="12" required>
+                                <label for="number">Phone Number: <span aria-label="required">*</span></label>
+                                <input type="tel" name="phone" id="phone" placeholder="123-555-5555" 
+                                pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" minlength="12" maxlength="12" 
+                                title="Must be in the following format: ###-###-####" required>
                             </div>
                             <div class="input">
-                               <label for="password">Password:</label>
+                               <label for="password">Password: <span aria-label="required">*</span></label>
                                 <input type="password" name="password" id="password" 
                                 placeholder="8-16 characters, one uppercase letter, lowercase letter, number, symbol" 
                                 title="Must be 8-16 characters long, contain at least one uppercase letter, lowercase letter, number, and symbol" 
                                 pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}$" required>
                             </div>
                             <div class="input">
-                                <label for="passwordConfirm">Confirm Password:</label>
+                                <label for="passwordConfirm">Confirm Password: <span aria-label="required">*</span></label>
                                 <input type="password" name="passwordConfirm" id="passwordConfirm" 
                                 placeholder="8-16 characters, one uppercase letter, lowercase letter, number, symbol" 
                                 title="Must be 8-16 characters long, contain at least one uppercase letter, lowercase letter, number, and symbol" 
